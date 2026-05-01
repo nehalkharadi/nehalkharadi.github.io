@@ -328,7 +328,9 @@ footer { text-align: center; padding: 2rem; border-top: 1px solid var(--glass-bo
     .hamburger.active .line:nth-child(1) { transform: translateY(9px) rotate(45deg); }
     .hamburger.active .line:nth-child(2) { opacity: 0; }
     .hamburger.active .line:nth-child(3) { transform: translateY(-9px) rotate(-45deg); }
-    .hero .name { font-size: 3rem; }
+    .hero { padding: 120px 5% 0 5%; }
+    .hero .name { font-size: clamp(2rem, 9vw, 3.2rem); letter-spacing: -1px; }
+    .hero .dynamic-text { font-size: clamp(1rem, 4vw, 1.5rem); }
     .hero-3d-card { width: 100%; max-width: 350px; height: 400px; }
     .section { padding: 80px 5%; }
 }
