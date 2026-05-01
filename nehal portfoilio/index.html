@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nehal Kharadi - Web Developer Portfolio">
+    <title>Nehal Kharadi - Web Developer</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800;900&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- 3D Background Elements -->
+    <div class="bg-3d-scene">
+        <!-- We will dynamically move these with JS -->
+        <div class="shape shape-1 cube" data-speed="-2">
+            <div class="face front"></div>
+            <div class="face back"></div>
+            <div class="face right"></div>
+            <div class="face left"></div>
+            <div class="face top"></div>
+            <div class="face bottom"></div>
+        </div>
+        <div class="shape shape-2 cube" data-speed="3">
+            <div class="face front"></div>
+            <div class="face back"></div>
+            <div class="face right"></div>
+            <div class="face left"></div>
+            <div class="face top"></div>
+            <div class="face bottom"></div>
+        </div>
+        <div class="shape shape-3 cube" data-speed="1.5">
+            <div class="face front"></div>
+            <div class="face back"></div>
+            <div class="face right"></div>
+            <div class="face left"></div>
+            <div class="face top"></div>
+            <div class="face bottom"></div>
+        </div>
+        <div class="glow-bg"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo">Nehal<span class="text-cyan">.K</span></a>
+            <ul class="nav-links">
+                <li><a href="#about" class="hover-3d">About</a></li>
+                <li><a href="#skills" class="hover-3d">Skills</a></li>
+                <li><a href="#projects" class="hover-3d">Projects</a></li>
+                <li><a href="#contact" class="hover-3d">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content" data-tilt>
+
+            <h1 class="name" data-depth="20">
+                Hi, I'm <br>
+                <span class="text-gradient">Nehal Kharadi</span>
+            </h1>
+            <h2 class="dynamic-text">I am a <span class="typing-text"></span><span class="cursor">&nbsp;</span></h2>
+            <p class="summary" data-depth="10">Building intelligent and scalable web applications with Laravel,
+                combining efficient backend architecture with AI-driven solutions.</p>
+            <div class="hero-cta" data-depth="30">
+                <a href="#projects" class="btn btn-primary btn-3d">View projects</a>
+                <a href="#contact" class="btn btn-outline btn-3d">Connect</a>
+            </div>
+        </div>
+        <div class="hero-graphic" id="parallax-scene">
+            <!-- 3D Card in Hero -->
+            <div class="hero-3d-card js-tilt">
+                <div class="card-glass">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Coding">
+                    <div class="card-overlay">
+                        <h3>System Active</h3>
+                        <div class="tech-icons">
+                            <i class="fab fa-react" style="color: #00F0FF;"></i>
+                            <i class="fab fa-js" style="color: #FF007F;"></i>
+                            <i class="fab fa-css3-alt" style="color: #7A00FF;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <h2 class="section-title">01. About Me</h2>
+        <div class="about-container js-tilt">
+            <div class="about-text glass-box">
+                <h3 class="text-cyan mb-4">Beyond the Code</h3>
+                <p>I am a dedicated Laravel developer crafting scalable and high-performance web applications. With a
+                    strong focus on backend architecture and clean code, I build reliable systems that deliver
+                    real-world impact.
+                </p>
+                <p>My toolkit consists of modern web technologies, with a strong focus on backend architecture—creating
+                    efficient, reliable, and scalable solutions.</p>
+            </div>
+            <div class="about-stats glass-box">
+                <div class="stat-item">
+                    <h4 class="text-gradient">8</h4>
+                    <p>month</p>
+                </div>
+                <div class="stat-item">
+                    <h4 class="text-gradient">100%</h4>
+                    <p>Passion</p>
+                </div>
+                <div class="stat-item">
+                    <h4 class="text-gradient">24/7</h4>
+                    <p>Innovation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <h2 class="section-title">02. Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card js-tilt glass-box">
+                <div class="skill-icon"><i class="fas fa-layer-group"></i></div>
+                <h3>Frontend Space</h3>
+                <div class="skill-bar-container">
+                    <div class="skill-label"><span>HTML</span> <span class="text-cyan">95%</span></div>
+                    <div class="skill-track">
+                        <div class="skill-fill bg-cyan" data-width="95%"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-container">
+                    <div class="skill-label"><span>CSS / BOOTSTRAP</span> <span class="text-pink">80%</span></div>
+                    <div class="skill-track">
+                        <div class="skill-fill bg-pink" data-width="98%"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-container">
+                    <div class="skill-label"><span>JavaScript</span> <span class="text-purple">98%</span></div>
+                    <div class="skill-track">
+                        <div class="skill-fill bg-purple" data-width="70%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-card js-tilt glass-box">
+                <div class="skill-icon"><i class="fas fa-database"></i></div>
+                <h3>Backend Matrix</h3>
+                <div class="skill-bar-container">
+                    <div class="skill-label"><span>PHP (LARAVEL)</span> <span class="text-cyan">90%</span></div>
+                    <div class="skill-track">
+                        <div class="skill-fill bg-cyan" data-width="85%"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-container">
+                    <div class="skill-label"><span>MySQL (SQL)</span> <span class="text-pink">85%</span></div>
+                    <div class="skill-track">
+                        <div class="skill-fill bg-pink" data-width="75%"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <h2 class="section-title">03. 3D Showcases</h2>
+        <div class="project-gallery">
+            <!-- Project 1 -->
+            <div class="project-box js-tilt">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Project 1">
+                </div>
+                <div class="project-content glass-box">
+                    <h3 class="text-cyan">Fake News Detection AI</h3>
+                    <p>A smart AI tool that detects fake news using content analysis, tone, and realism checks.
+                        It provides accurate real/fake classification
+                        with a confidence percentage.</p>
+                    <div class="project-links">
+                        <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
+                        <a href="#" class="btn-icon"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-box js-tilt">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Project 2">
+                </div>
+                <div class="project-content glass-box">
+                    <h3 class="text-pink">Cyberpunk Dashboard</h3>
+                    <p>Data visualization tool built with glowing neon charts, isometric grids, and live data feeds.</p>
+                    <div class="project-links">
+                        <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
+                        <a href="https://nehalkharadi.github.io/fake-news-detection-ai/" class="btn-icon"><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <h2 class="section-title">04. Initiate Contact</h2>
+        <div class="contact-wrapper js-tilt glass-box">
+            <div class="contact-form-container">
+                <h3 class="text-gradient mb-4">Send a Transmission</h3>
+                <form id="contactForm" class="form-3d">
+                    <div class="input-container">
+                        <input type="text" required id="name" class="input-field">
+                        <label for="name">Your Name</label>
+                        <div class="input-line"></div>
+                    </div>
+                    <div class="input-container">
+                        <input type="email" required id="email" class="input-field">
+                        <label for="email">Your Email</label>
+                        <div class="input-line"></div>
+                    </div>
+                    <div class="input-container">
+                        <textarea required id="message" rows="4" class="input-field"></textarea>
+                        <label for="message">Your Message</label>
+                        <div class="input-line"></div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-3d mt-4">Transmit</button>
+                </form>
+            </div>
+            <div class="contact-social">
+                <h3>Or find me in the grid</h3>
+                <div class="social-3d">
+                    <a href="#" class="social-btn"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-btn"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Crafted by Nehal Kharadi</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
