@@ -1016,7 +1016,7 @@ footer {
     }
 
     .hero .name {
-        font-size: 3rem;
+        font-size: clamp(2rem, 10vw, 3rem);
     }
 
     .hero-3d-card {
