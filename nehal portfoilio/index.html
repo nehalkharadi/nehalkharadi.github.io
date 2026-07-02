@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nehal Kharadi - Full Stack Developer Portfolio">
+    <title>Nehal Kharadi - Full Stack Developer</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Background Design Layers -->
+    <div class="bg-3d-scene">
+        <!-- Layer 1: Light Grid Pattern -->
+        <div class="grid-overlay"></div>
+        
+        <!-- Layer 2: Floating 3D Shapes & Bubbles -->
+        <div class="shape shape-1 cube" data-speed="-1.2">
+            <div class="face front"></div>
+            <div class="face back"></div>
+            <div class="face right"></div>
+            <div class="face left"></div>
+            <div class="face top"></div>
+            <div class="face bottom"></div>
+        </div>
+        <div class="shape shape-2 cube" data-speed="1.8">
+            <div class="face front"></div>
+            <div class="face back"></div>
+            <div class="face right"></div>
+            <div class="face left"></div>
+            <div class="face top"></div>
+            <div class="face bottom"></div>
+        </div>
+        <div class="shape shape-3 cube" data-speed="1">
+            <div class="face front"></div>
+            <div class="face back"></div>
+            <div class="face right"></div>
+            <div class="face left"></div>
+            <div class="face top"></div>
+            <div class="face bottom"></div>
+        </div>
+        
+        <!-- Floating Soft Bubbles -->
+        <div class="bubble bubble-1"></div>
+        <div class="bubble bubble-2"></div>
+        <div class="bubble bubble-3"></div>
+        <div class="bubble bubble-4"></div>
+        
+        <!-- Layer 3: Soft Gradient Glows -->
+        <div class="glow-bg"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo">Nehal<span class="text-primary">.K</span></a>
+            <ul class="nav-links">
+                <li><a href="#about" class="hover-underline">About</a></li>
+                <li><a href="#experience" class="hover-underline">Experience</a></li>
+                <li><a href="#skills" class="hover-underline">Skills</a></li>
+                <li><a href="#projects" class="hover-underline">Projects</a></li>
+                <li><a href="#contact" class="hover-underline">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <!-- Floating Particle Canvas Container -->
+        <div id="particles-container"></div>
+        
+        <div class="hero-content reveal-fade-in">
+            <div class="opportunity-badge float-animation">
+                <div class="live-dot"></div>
+                <span>Available for Opportunities</span>
+            </div>
+            <h1 class="name">
+                Hi, I'm <br>
+                <span class="text-gradient">Nehal Kharadi</span>
+            </h1>
+            <h2 class="dynamic-text">I am a <span class="typing-text"></span><span class="cursor">&nbsp;</span></h2>
+            <p class="summary">I am a Full Stack Developer with hands-on experience in PHP Laravel, MySQL, HTML, CSS, JavaScript, Bootstrap, WordPress basics, SEO updates, and live project deployment.</p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary btn-3d">View Projects</a>
+                <a href="#" class="btn btn-outline btn-3d">Download Resume</a>
+                <a href="#contact" class="btn btn-link">Contact Me <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="hero-graphic reveal-zoom-in" id="parallax-scene">
+            <!-- 3D Card in Hero -->
+            <div class="hero-3d-card js-tilt">
+                <div class="card-glass">
+                    <img src="assets/main.png" alt="Full Stack Coding Concept">
+                    <div class="card-overlay">
+                        <h3>Full Stack Developer</h3>
+                        <div class="tech-icons">
+                            <i class="fab fa-laravel" style="color: #FF2D20;"></i>
+                            <i class="fab fa-js" style="color: #F7DF1E;"></i>
+                            <i class="fas fa-database" style="color: #00758F;"></i>
+                            <i class="fab fa-html5" style="color: #E34F26;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <h2 class="section-title reveal-fade-in">About Me</h2>
+        <div class="about-container">
+            <div class="about-text glass-box reveal-slide-up">
+                <h3 class="text-primary mb-4">My Background</h3>
+                <p>I am a Full Stack Developer with practical experience in working on live projects. I have completed internship training and worked on real-time website and management system projects using PHP Laravel, MySQL, HTML, CSS, JavaScript, Bootstrap, WordPress basic knowledge, SEO-related updates, and website deployment on cPanel. I focus on building responsive, user-friendly, and professional web solutions.</p>
+            </div>
+            <div class="about-stats glass-box reveal-slide-up" style="transition-delay: 0.2s;">
+                <div class="stat-item hover-lift">
+                    <h4 class="text-gradient">6</h4>
+                    <p>Month experience</p>
+                </div>
+                <div class="stat-item hover-lift">
+                    <h4 class="text-gradient">6+</h4>
+                    <p>Projects Worked On</p>
+                </div>
+                <div class="stat-item hover-lift">
+                    <h4 class="text-gradient">100%</h4>
+                    <p>Job Ready</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience section">
+        <h2 class="section-title reveal-fade-in">Work Experience</h2>
+        <div class="timeline-container">
+            <div class="timeline-item glass-box js-tilt reveal-slide-up">
+                <div class="timeline-dot"></div>
+                <div class="timeline-header">
+                    <span class="timeline-duration"><i class="far fa-calendar-alt"></i> 2 Feb 2026 - Present</span>
+                    <h3 class="timeline-title">Intern Full Stack Developer</h3>
+                    <h4 class="timeline-company">Techomax Solution</h4>
+                </div>
+                <div class="timeline-body">
+                    <p>Completed 1 month of internship training, followed by hands-on work on live projects as a Full Stack Developer using PHP Laravel, MySQL, HTML, CSS, JavaScript, Bootstrap, WordPress basic knowledge, SEO-related website updates, and cPanel website deployment.</p>
+                    <div class="timeline-tags">
+                        <span>PHP Laravel</span>
+                        <span>MySQL</span>
+                        <span>Bootstrap</span>
+                        <span>WordPress</span>
+                        <span>SEO</span>
+                        <span>cPanel</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <h2 class="section-title reveal-fade-in">Technical Skills</h2>
+        <div class="skills-grid">
+            <!-- Frontend Card -->
+            <div class="skill-card js-tilt glass-box glow-border reveal-slide-up">
+                <div class="skill-icon"><i class="fas fa-desktop"></i></div>
+                <h3>Frontend Architecture</h3>
+                <div class="skill-chips">
+                    <div class="skill-chip"><i class="fab fa-html5 html-color"></i> HTML</div>
+                    <div class="skill-chip"><i class="fab fa-css3-alt css-color"></i> CSS</div>
+                    <div class="skill-chip"><i class="fab fa-js js-color"></i> JavaScript</div>
+                    <div class="skill-chip"><i class="fab fa-bootstrap bootstrap-color"></i> Bootstrap</div>
+                </div>
+            </div>
+
+            <!-- Backend & Database Card -->
+            <div class="skill-card js-tilt glass-box glow-border reveal-slide-up" style="transition-delay: 0.2s;">
+                <div class="skill-icon"><i class="fas fa-server"></i></div>
+                <h3>Backend & Systems</h3>
+                <div class="skill-chips">
+                    <div class="skill-chip"><i class="fab fa-php php-color"></i> PHP</div>
+                    <div class="skill-chip"><i class="fab fa-laravel laravel-color"></i> Laravel</div>
+                    <div class="skill-chip"><i class="fas fa-database sql-color"></i> SQL / MySQL</div>
+                </div>
+            </div>
+
+            <!-- Deployment & Marketing Card -->
+            <div class="skill-card js-tilt glass-box glow-border reveal-slide-up" style="transition-delay: 0.4s;">
+                <div class="skill-icon"><i class="fas fa-globe"></i></div>
+                <h3>CMS & Deployment</h3>
+                <div class="skill-chips">
+                    <div class="skill-chip"><i class="fab fa-wordpress wp-color"></i> WordPress Basic</div>
+                    <div class="skill-chip"><i class="fas fa-search seo-color"></i> SEO Updates</div>
+                    <div class="skill-chip"><i class="fas fa-cloud-upload-alt cpanel-color"></i> cPanel Deployment</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <h2 class="section-title reveal-fade-in">Featured Projects</h2>
+        <div class="project-gallery">
+            <!-- Project 1 -->
+            <div class="project-box js-tilt reveal-slide-up">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=800&q=80" alt="Real Estate Website">
+                </div>
+                <div class="project-content glass-box">
+                    <div class="project-meta">
+                        <span class="badge"><i class="far fa-clock"></i> 3 Months</span>
+                        <span class="badge"><i class="far fa-user"></i> Individual</span>
+                    </div>
+                    <h3 class="text-gradient">Real Estate Website</h3>
+                    <h4 class="sub-project-title">Live Project – Delawala Group</h4>
+                    <p>I worked on a live project for a real estate-based company website, where I contributed to the design and development of a professional web platform. The system provides detailed information about various residential and commercial projects, property details, company services, and business inquiries. It focuses on delivering a user-friendly interface, easy navigation, responsive design, and proper content presentation for showcasing real estate projects.</p>
+                    <div class="project-links">
+                        <a href="https://delawalagroup.com/" target="_blank" rel="noopener" class="btn-icon"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-box js-tilt reveal-slide-up">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80" alt="Chemical Industry Website">
+                </div>
+                <div class="project-content glass-box">
+                    <div class="project-meta">
+                        <span class="badge"><i class="far fa-clock"></i> 19 Days</span>
+                        <span class="badge"><i class="far fa-user"></i> Individual</span>
+                    </div>
+                    <h3 class="text-gradient">Chemical Industry Website</h3>
+                    <h4 class="sub-project-title">Live Project – Pure Grade Exim LLP</h4>
+                    <p>I worked on a live project for a chemical and global trading-based company website, where I contributed to the design and development of a professional web platform. The system provides detailed information about various chemical products, industrial raw materials, coal, industrial salt, solvents, product categories, company services, and business inquiries. It focuses on delivering a user-friendly interface, easy navigation, responsive design, and proper content presentation for showcasing chemical and trading solutions.</p>
+                    <div class="project-links">
+                        <a href="https://puregrade.in/" target="_blank" rel="noopener" class="btn-icon"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-box js-tilt reveal-slide-up">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="Real Estate Management System">
+                </div>
+                <div class="project-content glass-box">
+                    <div class="project-meta">
+                        <span class="badge"><i class="far fa-clock"></i> 3 Months</span>
+                        <span class="badge"><i class="far fa-user"></i> Individual</span>
+                    </div>
+                    <h3 class="text-gradient">Real Estate Management</h3>
+                    <h4 class="sub-project-title">Delawala Management</h4>
+                    <p>I worked on a real estate management system for managing property-related business operations in a structured way. The system includes modules such as Masters, Property Master, Property Sales/Booking, Payment Management, Rental Management, Expense Management, Inventory Management, Loan Management, and Reports. It also provides dashboard KPIs, report filters, summary cards, PDF export, Excel export, print options, audit logs, and backup-related features. The main focus was an easy-to-use Admin Panel.</p>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-box js-tilt reveal-slide-up">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="ERP System">
+                </div>
+                <div class="project-content glass-box">
+                    <div class="project-meta">
+                        <span class="badge"><i class="far fa-clock"></i> 1 Week</span>
+                        <span class="badge"><i class="far fa-user"></i> Individual</span>
+                    </div>
+                    <h3 class="text-gradient">ERP System</h3>
+                    <h4 class="sub-project-title">Automac – Eelcon</h4>
+                    <p>I worked on an ERP system for Automac, where I contributed to the development and setup of an admin-based business management platform. The system includes an admin login panel and helps manage business operations in a structured and organized way. The main focus of the project was to provide a secure, user-friendly, and professional ERP platform for handling company data, internal processes, and management activities efficiently.</p>
+                    <div class="project-links">
+                        <a href="https://automac.eelcon.in/" target="_blank" rel="noopener" class="btn-icon"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="project-box js-tilt reveal-slide-up">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80" alt="Fake News Detection AI">
+                </div>
+                <div class="project-content glass-box">
+                    <div class="project-meta">
+                        <span class="badge"><i class="fas fa-robot"></i> AI / ML</span>
+                    </div>
+                    <h3 class="text-gradient">Fake News Detection AI</h3>
+                    <h4 class="sub-project-title">Smart classifier</h4>
+                    <p>A smart AI-based project that detects fake news using content analysis and provides real/fake classification with confidence percentage.</p>
+                    <div class="project-links">
+                        <a href="https://nehalkharadi.github.io/fake-news-detection-ai/" target="_blank" rel="noopener" class="btn-icon"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <h2 class="section-title reveal-fade-in">Contact Me</h2>
+        <div class="contact-wrapper js-tilt glass-box reveal-slide-up">
+            <div class="contact-form-container">
+                <h3 class="text-gradient mb-4">Send a Message</h3>
+                <form id="contactForm" class="form-3d">
+                    <div class="input-container">
+                        <input type="text" required id="name" class="input-field">
+                        <label for="name">Your Name</label>
+                        <div class="input-line"></div>
+                    </div>
+                    <div class="input-container">
+                        <input type="email" required id="email" class="input-field">
+                        <label for="email">Your Email</label>
+                        <div class="input-line"></div>
+                    </div>
+                    <div class="input-container">
+                        <textarea required id="message" rows="4" class="input-field"></textarea>
+                        <label for="message">Your Message</label>
+                        <div class="input-line"></div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-3d mt-4">Send Message</button>
+                </form>
+            </div>
+            <div class="contact-social">
+                <h3>Connect With Me</h3>
+                <div class="social-3d">
+                    <a href="https://github.com/nehalkharadi" target="_blank" rel="noopener" class="social-btn"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/nehalkharadi" target="_blank" rel="noopener" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-btn"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Crafted by Nehal Kharadi. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
