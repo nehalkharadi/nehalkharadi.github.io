@@ -171,17 +171,6 @@ h4 {
     pointer-events: none;
     z-index: 0;
 }
-    background-size: 50px 50px, 25px 25px;
-    background-position: 0 0, 12.5px 12.5px;
-    pointer-events: none;
-    z-index: 0;
-    animation: gridFloat 30s linear infinite;
-}
-
-@keyframes gridFloat {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(50px); }
-}
 
 /* Layer 2: Floating 3D Premium Cubes */
 .cube {
@@ -933,53 +922,13 @@ nav.scrolled {
 
 .skill-card {
     padding: 3rem 2.5rem;
-    transform-style: preserve-3d;
     position: relative;
 }
 
-/* Premium Glowing Border Effect */
-.glow-border {
-    position: relative;
-}
-
-.glow-border::before {
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    border-radius: 20px;
-    background: var(--gradient-accent);
-    opacity: 0;
-    transition: opacity 0.5s ease;
-    pointer-events: none;
-    z-index: -1;
-    filter: blur(8px);
-}
-
-.glow-border::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-radius: 20px;
-    padding: 2px;
-    background: var(--gradient-accent);
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    mask-composite: exclude;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-    pointer-events: none;
-}
-
-.glow-border:hover::before,
-.glow-border:hover::after {
-    opacity: 1;
+.skill-card:hover {
+    border-color: rgba(37, 99, 235, 0.3);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-4px);
 }
 
 .skill-icon {
