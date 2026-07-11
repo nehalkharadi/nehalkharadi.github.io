@@ -143,8 +143,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const centerX = rect.width / 2;
             const centerY = rect.height / 2;
             
-            tiltX = ((y - centerY) / centerY) * -8;
-            tiltY = ((x - centerX) / centerX) * 8;
+            tiltX = ((y - centerY) / centerY) * -3;
+            tiltY = ((x - centerX) / centerX) * 3;
             
             el.style.transform = `perspective(1500px) rotateX(${tiltX}deg) rotateY(${tiltY}deg) scale3d(1.03, 1.03, 1.03)`;
             el.style.transition = 'transform 0.1s ease-out';
